@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/zoho-marketing-plus-design-system-8dd68c03-2eb7-4f12-aff2-933cdae0ee8f/tokens/colors.css">
+<link rel="stylesheet" href="_ds/zoho-marketing-plus-design-system-8dd68c03-2eb7-4f12-aff2-933cdae0ee8f/tokens/typography.css">
+<link rel="stylesheet" href="_ds/zoho-marketing-plus-design-system-8dd68c03-2eb7-4f12-aff2-933cdae0ee8f/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/zoho-marketing-plus-design-system-8dd68c03-2eb7-4f12-aff2-933cdae0ee8f/tokens/base.css">
+<link rel="stylesheet" href="_ds/zoho-marketing-plus-design-system-8dd68c03-2eb7-4f12-aff2-933cdae0ee8f/styles.css">
+<script src="_ds/zoho-marketing-plus-design-system-8dd68c03-2eb7-4f12-aff2-933cdae0ee8f/_ds_bundle.js"></script>
+<style>
+  body { margin: 0; background: var(--grey-10); }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</helmet>
+
+<div style="font-family: 'Zoho Puvi', system-ui, sans-serif; color: var(--fg1); padding: 40px 32px 56px; max-width: 1424px; margin: 0 auto; box-sizing: border-box">
+
+  <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px; border-bottom: 1px solid var(--border); padding-bottom: 20px">
+    <div style="display: flex; flex-direction: column; gap: 8px; min-width: 0">
+      <div style="display: flex; align-items: center; gap: 10px">
+        <span style="width: 8px; height: 8px; border-radius: 9999px; background: var(--mod-projects)"></span>
+        <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.02em; text-transform: uppercase; color: var(--fg3)">Zoho FSM &middot; Mobile app</span>
+      </div>
+      <h1 style="margin: 0; font-size: 24px; font-weight: 700; line-height: 1.3">Field technician flow — Service: Inspection</h1>
+      <p style="margin: 0; font-size: 14px; line-height: 1.5; color: var(--fg2); max-width: 72ch; text-wrap: pretty">End-to-end path a technician takes in the FSM mobile app, from location-enabled check-in through service report and job completion.</p>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center">
+      <x-import component-from-global-scope="ZohoMarketingPlusDesignSystem_8dd68c.Tag" color="green" variant="filled-stroke" dot="{{ true }}" hint-size="auto,24px">Location validated</x-import>
+      <x-import component-from-global-scope="ZohoMarketingPlusDesignSystem_8dd68c.Tag" color="blue" variant="filled-stroke" dot="{{ true }}" hint-size="auto,24px">Google Maps</x-import>
+      <x-import component-from-global-scope="ZohoMarketingPlusDesignSystem_8dd68c.Tag" color="yellow" variant="filled-stroke" dot="{{ true }}" hint-size="auto,24px">Record created</x-import>
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px 24px; margin-top: 28px; align-items: start">
+
+    <div style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
+      <div style="display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 6px; background: var(--accent-30); border: 1px solid var(--accent-40)">
+        <span class="num" style="font-size: 12px; font-weight: 700; color: var(--accent)">01</span>
+        <span style="font-size: 13px; font-weight: 600; color: var(--grey-90)">Start of day</span>
+      </div>
+
+      <x-import component-from-global-scope="ZohoMarketingPlusDesignSystem_8dd68c.Card" padding="18px 20px" hover="{{ true }}" hint-size="100%,150px">
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <div style="display: flex; align-items: center; gap: 10px">
+            <span class="num" style="flex: none; width: 24px; height: 24px; border-radius: 9999px; background: var(--grey-90); color: var(--white); font-size: 12px; font-weight: 600; display: grid; place-items: center">1</span>
+            <span style="font-size: 16px; font-weight: 600; line-height: 1.4">Check in</span>
+          </div>
+          <p style="margin: 0; font-size: 13px; line-height: 1.6; color: var(--fg2)">Technician checks in with location services enabled. Check-out closes the day the same way.</p>
+          <div style="display: flex">
+            <x-import component-from-global-scope="ZohoMarketingPlusDesignSystem_8dd68c.Tag" color="green" variant="filled" dot="{{ true }}" hint-size="auto,24px">Location enabled</x-import>
+          </div>
+        </div>
+      </x-import>
+
+      <div style="display: grid; place-items: center; color: var(--grey-60)">
+        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v14"></path><path d="M3.5 12.5 8 17l4.5-4.5"></path></svg>
+      </div>
+
+      <x-import component-from-global-scope="ZohoMarketingPlusDesignSystem_8dd68c.Card" padding="18px 20px" hover="{{ true }}" hint-size="100%,190px">
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <div style="display: flex; align-items: center; gap: 10px">
+            <span class="num" style="flex: none; width: 24px; height: 24px; border-radius: 9999px; background: var(--grey-90); color: var(--white); font-size: 12px; font-weight: 600; display: grid; place-items: center">2</span>
+            <span style="font-size: 16px; font-weight: 600; line-height: 1.4">View job list</span>
+          </div>
+          <p style="margin: 0; font-size: 13px; line-height: 1.6; color: var(--fg2)">Assigned jobs for the day, filtered by status and schedule.</p>
+          <div style="margin-top: 4px; border: 1px solid var(--border-soft); border-radius: 6px; padding: 10px 12px; background: var(--grey-20); display: flex; flex-direction: column; gap: 4px">
+            <span style="font-size: 13px; font-weight: 600; color: var(--grey-90)">Inspection — Zylker Plant B</span>
+            <span style="font-size: 12px; color: var(--fg3)">Today &middot; <span class="num">09:30</span> &middot; Scheduled</span>
+          </div>
+        </div>
+      </x-import>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
+      <div style="display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 6px; background: var(--accent-30); border: 1px solid var(--accent-40)">
+        <span class="num" style="font-size: 12px; font-weight: 700; color: var(--accent)">02</span>
+        <span style="font-size: 13px; font-weight: 600; color: var(--grey-90)">Job &amp; travel</span>
+      </div>
+
+      <x-import component-from-global-scope="ZohoMarketingPlusDesignSystem_8dd68c.Card" padding="18px 20px" hover="{{ true }}" hint-size="100%,130px">
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <div style="display: flex; align-items: center; gap: 10px">
+            <span class="num" style="flex: none; width: 24px; height: 24px; border-radius: 9999px; background: var(--grey-90); color: var(--white); font-size: 12px; font-weight: 600; display: grid; place-items: center">3</span>
+            <span style="font-size: 16px; font-weight: 600; line-height: 1.4">Select the job</span>
+          </div>
+          <p style="margin: 0; font-size: 13px; line-height: 1.6; color: var(--fg2)">Open the Inspection job. The service address is linked to Google Maps.</p>
+        </div>
+      </x-import>
+
+      <div style="display: grid; place-items: center; color: var(--grey-60)">
+        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v14"></path><path d="M3.5 12.5 8 17l4.5-4.5"></path></svg>
+      </div>
+
+      <x-import component-from-global-scope="ZohoMarketingPlusDesignSystem_8dd68c.Card" padding="18px 20px" hover="{{ true }}" hint-size="100%,160px">
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <div style="display: flex; align-items: center; gap: 10px">
+            <span class="num" style="flex: none; width: 24px; height: 24px; border-radius: 9999px; background: var(--grey-90); color: var(--white); font-size: 12px; font-weight: 600; display: grid; place-items: center">4</span>
+            <span style="font-size: 16px; font-weight: 600; line-height: 1.4">Tap Route</span>
+          </div>
+          <p style="margin: 0; font-size: 13px; line-height: 1.6; color: var(--fg2)">Hands off to Google Maps turn-by-turn navigation to the site.</p>
+          <div style="display: flex">
+            <x-import component-from-global-scope="ZohoMarketingPlusDesignSystem_8dd68c.Tag" color="blue" variant="filled" hint-size="auto,24px">Google Maps</x-import>
+          </div>
+        </div>
+      </x-import>
+
+      <div style="display: grid; place-items: center; color: var(--grey-60)">
+        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v14"></path><path d="M3.5 12.5 8 17l4.5-4.5"></path></svg>
+      </div>
+
+      <x-import component-from-global-scope="ZohoMarketingPlusDesignSystem_8dd68c.Card" padding="18px 20px" hover="{{ true }}" hint-size="100%,160px">
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <div style="display: flex; align-items: center; gap: 10px">
+            <span class="num" style="flex: none; width: 24px; height: 24px; border-radius: 9999px; background: var(--grey-90); color: var(--white); font-size: 12px; font-weight: 600; display: grid; place-items: center">5</span>
+            <span style="font-size: 16px; font-weight: 600; line-height: 1.4">Log the trip</span>
+          </div>
+          <p style="margin: 0; font-size: 13px; line-height: 1.6; color: var(--fg2)">Distance and travel time recorded against the job for billing.</p>
+          <div style="display: flex">
+            <x-import component-from-global-scope="ZohoMarketingPlusDesignSystem_8dd68c.Tag" color="yellow" variant="filled" hint-size="auto,24px">Trip record</x-import>
+          </div>
+        </div>
+      </x-import>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
+      <div style="display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 6px; background: var(--accent-30); border: 1px solid var(--accent-40)">
+        <span class="num" style="font-size: 12px; font-weight: 700; color: var(--accent)">03</span>
+        <span style="font-size: 13px; font-weight: 600; color: var(--grey-90)">On-site work</span>
+      </div>
+
+      <x-import component-from-global-scope="ZohoMarketingPlusDesignSystem_8dd68c.Card" padding="18px 20px" hover="{{ true }}" hint-size="100%,175px">
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <div style="display: flex; align-items: center; gap: 10px">
+            <span class="num" style="flex: none; width: 24px; height: 24px; border-radius: 9999px; background: var(--grey-90); color: var(--white); font-size: 12px; font-weight: 600; display: grid; place-items: center">6</span>
+            <span style="font-size: 16px; font-weight: 600; line-height: 1.4">Start work</span>
+          </div>
+          <p style="margin: 0; font-size: 13px; line-height: 1.6; color: var(--fg2)">App validates the technician is inside the work-location radius before the job can start.</p>
+          <div style="display: flex">
+            <x-import component-from-global-scope="ZohoMarketingPlusDesignSystem_8dd68c.Tag" color="green" variant="filled" dot="{{ true }}" hint-size="auto,24px">Location validated</x-import>
+          </div>
+        </div>
+      </x-import>
+
+      <div style="display: grid; place-items: center; color: var(--grey-60)">
+        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v14"></path><path d="M3.5 12.5 8 17l4.5-4.5"></path></svg>
+      </div>
+
+      <x-import component-from-global-scope="ZohoMarketingPlusDesignSystem_8dd68c.Card" padding="18px 20px" hover="{{ true }}" hint-size="100%,130px">
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <div style="display: flex; align-items: center; gap: 10px">
+            <span class="num" style="flex: none; width: 24px; height: 24px; border-radius: 9999px; background: var(--grey-90); color: var(--white); font-size: 12px; font-weight: 600; display: grid; place-items: center">7</span>
+            <span style="font-size: 16px; font-weight: 600; line-height: 1.4">Timesheet starts</span>
+          </div>
+          <p style="margin: 0; font-size: 13px; line-height: 1.6; color: var(--fg2)">Labour clock runs automatically from the start of work until completion.</p>
+        </div>
+      </x-import>
+
+      <div style="display: grid; place-items: center; color: var(--grey-60)">
+        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v14"></path><path d="M3.5 12.5 8 17l4.5-4.5"></path></svg>
+      </div>
+
+      <x-import component-from-global-scope="ZohoMarketingPlusDesignSystem_8dd68c.Card" padding="18px 20px" hover="{{ true }}" hint-size="100%,130px">
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <div style="display: flex; align-items: center; gap: 10px">
+            <span class="num" style="flex: none; width: 24px; height: 24px; border-radius: 9999px; background: var(--grey-90); color: var(--white); font-size: 12px; font-weight: 600; display: grid; place-items: center">8</span>
+            <span style="font-size: 16px; font-weight: 600; line-height: 1.4">Fill the job sheet</span>
+          </div>
+          <p style="margin: 0; font-size: 13px; line-height: 1.6; color: var(--fg2)">Inspection checklist, readings, services and parts captured on the job sheet.</p>
+        </div>
+      </x-import>
+
+      <div style="display: grid; place-items: center; color: var(--grey-60)">
+        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v14"></path><path d="M3.5 12.5 8 17l4.5-4.5"></path></svg>
+      </div>
+
+      <x-import component-from-global-scope="ZohoMarketingPlusDesignSystem_8dd68c.Card" padding="18px 20px" hover="{{ true }}" hint-size="100%,200px">
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <div style="display: flex; align-items: center; gap: 10px">
+            <span class="num" style="flex: none; width: 24px; height: 24px; border-radius: 9999px; background: var(--grey-90); color: var(--white); font-size: 12px; font-weight: 600; display: grid; place-items: center">9</span>
+            <span style="font-size: 16px; font-weight: 600; line-height: 1.4">Attach before &amp; after</span>
+          </div>
+          <p style="margin: 0; font-size: 13px; line-height: 1.6; color: var(--fg2)">Site photos uploaded to Notes as inspection evidence.</p>
+          <div style="display: flex; gap: 8px; margin-top: 4px">
+            <div style="flex: 1; height: 56px; border-radius: 6px; border: 1px solid var(--border-soft); background: var(--grey-20); display: grid; place-items: center; font-size: 12px; color: var(--fg3)">Before</div>
+            <div style="flex: 1; height: 56px; border-radius: 6px; border: 1px solid var(--border-soft); background: var(--grey-20); display: grid; place-items: center; font-size: 12px; color: var(--fg3)">After</div>
+          </div>
+        </div>
+      </x-import>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
+      <div style="display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 6px; background: var(--accent-30); border: 1px solid var(--accent-40)">
+        <span class="num" style="font-size: 12px; font-weight: 700; color: var(--accent)">04</span>
+        <span style="font-size: 13px; font-weight: 600; color: var(--grey-90)">Close out</span>
+      </div>
+
+      <x-import component-from-global-scope="ZohoMarketingPlusDesignSystem_8dd68c.Card" padding="18px 20px" hover="{{ true }}" hint-size="100%,175px">
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <div style="display: flex; align-items: center; gap: 10px">
+            <span class="num" style="flex: none; width: 24px; height: 24px; border-radius: 9999px; background: var(--grey-90); color: var(--white); font-size: 12px; font-weight: 600; display: grid; place-items: center">10</span>
+            <span style="font-size: 16px; font-weight: 600; line-height: 1.4">Create service report</span>
+          </div>
+          <p style="margin: 0; font-size: 13px; line-height: 1.6; color: var(--fg2)">Report generated from the job sheet and signed off by the customer on site.</p>
+          <div style="display: flex">
+            <x-import component-from-global-scope="ZohoMarketingPlusDesignSystem_8dd68c.Tag" color="yellow" variant="filled" hint-size="auto,24px">Service report</x-import>
+          </div>
+        </div>
+      </x-import>
+
+      <div style="display: grid; place-items: center; color: var(--grey-60)">
+        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v14"></path><path d="M3.5 12.5 8 17l4.5-4.5"></path></svg>
+      </div>
+
+      <x-import component-from-global-scope="ZohoMarketingPlusDesignSystem_8dd68c.Card" padding="18px 20px" hover="{{ true }}" hint-size="100%,175px">
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <div style="display: flex; align-items: center; gap: 10px">
+            <span class="num" style="flex: none; width: 24px; height: 24px; border-radius: 9999px; background: var(--grey-90); color: var(--white); font-size: 12px; font-weight: 600; display: grid; place-items: center">11</span>
+            <span style="font-size: 16px; font-weight: 600; line-height: 1.4">Complete the job</span>
+          </div>
+          <p style="margin: 0; font-size: 13px; line-height: 1.6; color: var(--fg2)">Completion is allowed only after a second work-location validation; timesheet stops.</p>
+          <div style="display: flex">
+            <x-import component-from-global-scope="ZohoMarketingPlusDesignSystem_8dd68c.Tag" color="green" variant="filled" dot="{{ true }}" hint-size="auto,24px">Location validated</x-import>
+          </div>
+        </div>
+      </x-import>
+
+      <div style="display: grid; place-items: center; color: var(--grey-60)">
+        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v14"></path><path d="M3.5 12.5 8 17l4.5-4.5"></path></svg>
+      </div>
+
+      <x-import component-from-global-scope="ZohoMarketingPlusDesignSystem_8dd68c.Card" padding="18px 20px" hover="{{ true }}" hint-size="100%,175px">
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <div style="display: flex; align-items: center; gap: 10px">
+            <span class="num" style="flex: none; width: 24px; height: 24px; border-radius: 9999px; background: var(--grey-90); color: var(--white); font-size: 12px; font-weight: 600; display: grid; place-items: center">12</span>
+            <span style="font-size: 16px; font-weight: 600; line-height: 1.4; color: var(--grey-90)">Check out</span>
+          </div>
+          <p style="margin: 0; font-size: 13px; line-height: 1.6; color: var(--fg2)">Technician checks out with location enabled, closing the shift.</p>
+          <div style="display: flex">
+            <x-import component-from-global-scope="ZohoMarketingPlusDesignSystem_8dd68c.Tag" color="green" variant="filled" dot="{{ true }}" hint-size="auto,24px">Location enabled</x-import>
+          </div>
+        </div>
+      </x-import>
+    </div>
+  </div>
+
+  <div style="margin-top: 32px; border-top: 1px solid var(--border); padding-top: 20px; display: flex; flex-wrap: wrap; gap: 32px">
+    <div style="display: flex; flex-direction: column; gap: 4px">
+      <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.02em; text-transform: uppercase; color: var(--fg3)">Records created</span>
+      <span style="font-size: 14px; color: var(--fg2)">Trip log &middot; Timesheet &middot; Job sheet &middot; Notes &middot; Service report</span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 4px">
+      <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.02em; text-transform: uppercase; color: var(--fg3)">Validation gates</span>
+      <span style="font-size: 14px; color: var(--fg2)">Check-in &middot; Start work &middot; Complete job &middot; Check-out</span>
+    </div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

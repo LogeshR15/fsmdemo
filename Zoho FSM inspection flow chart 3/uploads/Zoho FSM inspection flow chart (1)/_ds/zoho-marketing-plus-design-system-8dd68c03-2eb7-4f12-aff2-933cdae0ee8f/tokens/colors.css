@@ -1,0 +1,128 @@
+/* ======================================================================
+   Zoho Marketing Plus — Color tokens
+   Cool, blue-leaning neutrals + one of seven theme accents.
+   Default theme = Blue. Switch with [data-theme="red|yellow|pink|green|purple|orange"].
+   ====================================================================== */
+:root {
+  /* ---- Fixed greys (brand-neutral, blue-leaning) ---- */
+  --grey-90:   #292D33;   /* body / primary text */
+  --grey-80:   #545E6F;   /* secondary text */
+  --grey-70:   #6C7A96;   /* tertiary text, labels */
+  --grey-60:   #B3BAC8;   /* disabled text, placeholder */
+  --grey-50:   #D9DDE3;   /* borders, dividers */
+  --grey-40:   #ECEEF1;   /* hairline dividers */
+  --grey-30:   #F3F5F7;   /* subtle fills */
+  --grey-20:   #F7F8F9;   /* card header fill, hover rows */
+  --grey-10:   #F9FAFB;   /* lightest surface */
+  --white:     #FFFFFF;
+  --black:     #000000;
+  --ink:       #030915;   /* hard text on light */
+  --sidebar:   #181818;   /* side rail */
+  --sidebar-2: #202020;   /* side rail hover */
+  --sidebar-3: #2A2A2A;   /* side rail icon tile */
+
+  /* ---- Theme: Blue (default) ---- */
+  --blue-primary: #2C66DD;
+  --blue-topbar:  #3458A2;
+  --blue-40:      #E1EAFA;
+  --blue-30:      #EAF0FC;
+  --blue-20:      #F3F6FF;
+  --blue-10:      #F7F8FB;
+
+  /* ---- Theme: Red ---- */
+  --red-primary: #CC3929;
+  --red-topbar:  #B64034;
+  --red-40:      #F0EBEB;
+  --red-30:      #F5F1F1;
+  --red-20:      #F8F5F5;
+  --red-10:      #FBF9F9;
+
+  /* ---- Theme: Yellow ---- */
+  --yellow-primary: #EFAB1F;
+  --yellow-topbar:  #CB931D;
+  --yellow-40:      #EBEBE9;
+  --yellow-30:      #F1F1F0;
+  --yellow-20:      #F7F7F5;
+  --yellow-10:      #FAFAF9;
+
+  /* ---- Theme: Pink ---- */
+  --pink-primary: #C03E70;
+  --pink-topbar:  #A2355F;
+  --pink-40:      #EDEAEB;
+  --pink-30:      #F2F0F1;
+  --pink-20:      #FAF7F8;
+  --pink-10:      #FCFAFB;
+
+  /* ---- Theme: Green ---- */
+  --green-primary: #0C8844;
+  --green-topbar:  #00684B;
+  --green-40:      #EBEDEC;
+  --green-30:      #F1F2F2;
+  --green-20:      #F5F7F6;
+  --green-10:      #F9FAFA;
+
+  /* ---- Theme: Purple ---- */
+  --purple-primary: #663399;
+  --purple-topbar:  #683F92;
+  --purple-40:      #ECEAED;
+  --purple-30:      #F2F0F2;
+  --purple-20:      #F9F7FA;
+  --purple-10:      #FBFAFC;
+
+  /* ---- Theme: Orange ---- */
+  --orange-primary: #E65100;
+  --orange-topbar:  #954C23;
+  --orange-40:      #EDEBEA;
+  --orange-30:      #F2F1F0;
+  --orange-20:      #F7F6F5;
+  --orange-10:      #FAF9F9;
+
+  /* ---- Brand red (Zoho wordmark) ---- */
+  --zoho-red:   #E42527;
+
+  /* ---- Feedback ---- */
+  --link:          #006AFF;
+  --red-mandate:   #FA1D1D;
+  --red-alert:     #EA3D3D;
+  --yellow-alert:  #F49630;
+  --green-alert:   #42AD4B;
+  --blue-alert:    #1470CC;
+
+  /* ---- Topbar text (on theme chrome) ---- */
+  --topbar-fg:      #FFFFFF;
+  --topbar-fg-mute: #C7D3EA;
+
+  /* ---- Module brand dots (never recolored) ---- */
+  --mod-crm:      #E65100;
+  --mod-salesiq:  #2C66DD;
+  --mod-desk:     #1470CC;
+  --mod-projects: #00846A;
+  --mod-campaigns:#EA3D3D;
+  --mod-social:   #663399;
+  --mod-books:    #1470CC;
+
+  /* ---- Semantic aliases (theme = Blue by default) ---- */
+  --fg1:  var(--grey-90);
+  --fg2:  var(--grey-80);
+  --fg3:  var(--grey-70);
+  --fg4:  var(--grey-60);
+  --bg1:  var(--white);
+  --bg2:  var(--grey-20);
+  --bg3:  var(--grey-10);
+  --border:      var(--grey-50);
+  --border-soft: var(--grey-40);
+  --accent:        var(--blue-primary);
+  --accent-topbar: var(--blue-topbar);
+  --accent-40:     var(--blue-40);
+  --accent-30:     var(--blue-30);
+  --accent-20:     var(--blue-20);
+  --accent-10:     var(--blue-10);
+}
+
+/* ---- Theme switches via data attribute ---- */
+[data-theme="red"]    { --accent: var(--red-primary);    --accent-topbar: var(--red-topbar);    --accent-40: var(--red-40);    --accent-30: var(--red-30);    --accent-20: var(--red-20);    --accent-10: var(--red-10); }
+[data-theme="yellow"] { --accent: var(--yellow-primary); --accent-topbar: var(--yellow-topbar); --accent-40: var(--yellow-40); --accent-30: var(--yellow-30); --accent-20: var(--yellow-20); --accent-10: var(--yellow-10); }
+[data-theme="pink"]   { --accent: var(--pink-primary);   --accent-topbar: var(--pink-topbar);   --accent-40: var(--pink-40);   --accent-30: var(--pink-30);   --accent-20: var(--pink-20);   --accent-10: var(--pink-10); }
+[data-theme="green"]  { --accent: var(--green-primary);  --accent-topbar: var(--green-topbar);  --accent-40: var(--green-40);  --accent-30: var(--green-30);  --accent-20: var(--green-20);  --accent-10: var(--green-10); }
+[data-theme="purple"] { --accent: var(--purple-primary); --accent-topbar: var(--purple-topbar); --accent-40: var(--purple-40); --accent-30: var(--purple-30); --accent-20: var(--purple-20); --accent-10: var(--purple-10); }
+[data-theme="orange"] { --accent: var(--orange-primary); --accent-topbar: var(--orange-topbar); --accent-40: var(--orange-40); --accent-30: var(--orange-30); --accent-20: var(--orange-20); --accent-10: var(--orange-10); }

@@ -1,0 +1,33 @@
+/* ======================================================================
+   Zoho Marketing Plus — Spacing, radius, elevation, layout tokens
+   4px base grid. Two shadow elevations only.
+   ====================================================================== */
+:root {
+  /* ---- Spacing (4px base grid) ---- */
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  20px;
+  --sp-6:  24px;
+  --sp-7:  30px;
+  --sp-8:  40px;
+  --sp-9:  56px;
+  --sp-10: 72px;
+
+  /* ---- Corner radii (three tiers + pill) ---- */
+  --radius-sm:   3px;    /* badges, small counters */
+  --radius-md:   6px;    /* buttons, inputs, chips */
+  --radius-lg:   16px;   /* cards, panels */
+  --radius-pill: 9999px; /* tags, avatars, filter chips */
+
+  /* ---- Layout ---- */
+  --sidebar-w: 72px;
+  --topbar-h:  44px;
+  --content-max: 1424px;
+
+  /* ---- Elevations (only two) ---- */
+  --shadow-card:  0 1px 2px rgba(12,12,13,0.05), 0 1px 1px rgba(12,12,13,0.10);
+  --shadow-float: 0 4px 16px rgba(3,9,21,0.10);
+  --shadow-focus: 0 0 0 2px rgba(44,102,221,0.35);
+}

@@ -1,0 +1,50 @@
+/* ======================================================================
+   Zoho Marketing Plus — Typography tokens + webfonts
+   Primary family: Zoho Puvi (real brand files). Numerics: Inter.
+   ====================================================================== */
+
+/* ---- Zoho Puvi — real brand font files ---- */
+@font-face { font-family: "Zoho Puvi"; src: url("../fonts/Zoho_Puvi_Light.ttf") format("truetype"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "Zoho Puvi"; src: url("../fonts/Zoho_Puvi_Regular.ttf") format("truetype"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Zoho Puvi"; src: url("../fonts/Zoho_Puvi_Regular_Italic.ttf") format("truetype"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Zoho Puvi"; src: url("../fonts/Zoho_Puvi_Medium.ttf") format("truetype"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Zoho Puvi"; src: url("../fonts/Zoho_Puvi_Semibold.ttf") format("truetype"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Zoho Puvi"; src: url("../fonts/Zoho_Puvi_Semibold_Italic.ttf") format("truetype"); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: "Zoho Puvi"; src: url("../fonts/Zoho_Puvi_Bold.ttf") format("truetype"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Zoho Puvi"; src: url("../fonts/Zoho_Puvi_Bold_Italic.ttf") format("truetype"); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "Zoho Puvi"; src: url("../fonts/Zoho_Puvi_Extrabold.ttf") format("truetype"); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Zoho Puvi"; src: url("../fonts/Zoho_Puvi_Black.ttf") format("truetype"); font-weight: 900; font-style: normal; font-display: swap; }
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  --font-ui:  "Zoho Puvi", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-num: "Inter", "SF Mono", Menlo, monospace;
+
+  /* Scale — Minor Third (1.2) */
+  --fs-10: 10px;   /* labels */
+  --fs-12: 12px;   /* captions / tags */
+  --fs-13: 13px;   /* tooltips */
+  --fs-14: 14px;   /* body (default) */
+  --fs-16: 16px;   /* section title / body-large */
+  --fs-18: 18px;   /* major heading / highlights */
+  --fs-20: 20px;
+  --fs-24: 24px;   /* page title */
+  --fs-32: 32px;
+  --fs-46: 46px;   /* hero */
+
+  --fw-light:    300; /* @kind font */
+  --fw-regular:  400; /* @kind font */
+  --fw-medium:   500; /* @kind font */
+  --fw-semibold: 600; /* @kind font */
+  --fw-bold:     700; /* @kind font */
+  --fw-extrabold:800; /* @kind font */
+
+  --lh-tight: 1;     /* @kind font */
+  --lh-snug:  1.25;  /* @kind font */
+  --lh-body:  1.5;   /* @kind font */
+  --lh-loose: 1.875; /* @kind font */
+
+  --tracking-normal: 0;
+  --tracking-caps:   0.02em;   /* +2% on uppercase captions */
+}
